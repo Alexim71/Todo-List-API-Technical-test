@@ -4,7 +4,7 @@ Un contrôleur RESTful optimisé pour la gestion des tâches avec une gestion av
 
 ![Laravel](https://img.shields.io/badge/Laravel-8%2B-FF2D20?style=for-the-badge&logo=laravel)
 ![PHP](https://img.shields.io/badge/PHP-8%2B-777BB4?style=for-the-badge&logo=php)
-![API](https://img.shields.io/badge/API-RESTful-00C7B7?style=for-the-badge)
+![API](https://img.shields.io/badge/API-RESTful-00C7B7?style=for-the-badge&logo=api)
 
 ## 📝 Description
 
@@ -12,7 +12,7 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
 
 | ✅ | 🛡️ | 📊 | 🔒 | 📝 | 🎯 |
 |---|---|---|---|---|---|
-| Opérations CRUD | Gestion d'erreurs | Réponses JSON | Validation | Logging | Type safety |
+| Opérations CRUD | Gestion d'erreurs | Réponses JSON | Validation |Type safety |
 
 ## 🚀 Endpoints
 
@@ -26,10 +26,17 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
 
 ## 📦 Structure des réponses
 
-### ✅ Succès (200/201)
+### ✅ 201 Created
 ```json
 {
     "success": true,
-    "data": {},
-    "message": "Message descriptif"
+    "data": {
+        "title": "Ma tâche3",
+        "description": "Description",
+        "status": "en_attente",
+        "updated_at": "2026-03-07T18:27:53.000000Z",
+        "created_at": "2026-03-07T18:27:53.000000Z",
+        "id": 3
+    },
+    "message": "Tâche créée avec succès"
 }
