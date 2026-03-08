@@ -6,7 +6,7 @@ RESTful-контроллер, оптимизированный для управ
 ![PHP](https://img.shields.io/badge/PHP-8.5.3%2B-FF2D20?style=for-the-badge&logo=php)
 ![API](https://img.shields.io/badge/API-RESTful-00C7B7?style=for-the-badge&logo=api)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0.45%2B-4479A1?style=for-the-badge&logo=mysql)
-![Composer](https://img.shields.io/badge/Composer-2%2B-885630?style=for-the-badge&logo=composer)
+![Composer](https://img.shields.io/badge/Composer-2.9.5%2B-885630?style=for-the-badge&logo=composer)
 
 
 ## Средство
