@@ -6,6 +6,23 @@ Un contrôleur RESTful optimisé pour la gestion des tâches avec une gestion av
 ![PHP](https://img.shields.io/badge/PHP-8.5.3%2B-FF2D20?style=for-the-badge&logo=php)
 ![API](https://img.shields.io/badge/API-RESTful-00C7B7?style=for-the-badge&logo=api)
 
+
+## Prérequis
+- PHP 8.1+
+- Composer
+- MySQL
+
+## Installation
+```bash
+git clone [votre-repo]
+cd todo-api
+composer install
+cp .env.example .env
+# Configurez votre base de données dans .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+
 ## 📝 Description
 
 Ce contrôleur Laravel fournit une API complète pour la gestion des tâches avec :
