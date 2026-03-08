@@ -26,7 +26,7 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
 
 ## 📦 Structure des réponses
 
-### ✅ 201 Created
+### ✅ 201 index() → GET /api/tasks
 ```json
 {
     "success": true,
@@ -39,4 +39,37 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
         "id": 3
     },
     "message": "Tâche créée avec succès"
+}
+
+### ✅ 201 index() → GET /api/tasks
+```json
+{
+    "success": true,
+    "data": [
+        {
+            "id": 1,
+            "title": "Tâche modifiée",
+            "description": "Description",
+            "status": "En cours",
+            "created_at": "2026-03-06T18:10:37.000000Z",
+            "updated_at": "2026-03-06T19:07:16.000000Z"
+        },
+        {
+            "id": 2,
+            "title": "Ma tâche2",
+            "description": "Description",
+            "status": "à faire",
+            "created_at": "2026-03-06T21:10:13.000000Z",
+            "updated_at": "2026-03-06T21:10:13.000000Z"
+        },
+        {
+            "id": 3,
+            "title": "Ma tâche3",
+            "description": "Description",
+            "status": "en_attente",
+            "created_at": "2026-03-07T18:27:53.000000Z",
+            "updated_at": "2026-03-07T18:27:53.000000Z"
+        }
+    ],
+    "message": "Tâches récupérées avec succès"
 }
