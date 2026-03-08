@@ -1,24 +1,21 @@
 # 📋 Task API Controller
 
-Un contrôleur RESTful optimisé pour la gestion des tâches avec une gestion avancée des erreurs et des réponses JSON structurées.
+RESTful-контроллер, оптимизированный для управления задачами, с расширенной обработкой ошибок и структурированными JSON-ответами.
 
 ![Laravel](https://img.shields.io/badge/Laravel-12.53.0%2B-FF2D20?style=for-the-badge&logo=laravel)
 ![PHP](https://img.shields.io/badge/PHP-8.5.3%2B-FF2D20?style=for-the-badge&logo=php)
 ![API](https://img.shields.io/badge/API-RESTful-00C7B7?style=for-the-badge&logo=api)
+![MySQL](https://img.shields.io/badge/MySQL-8.0.45%2B-4479A1?style=for-the-badge&logo=mysql)
+![Composer](https://img.shields.io/badge/Composer-2%2B-885630?style=for-the-badge&logo=composer)
 
 
-## Prérequis
-- PHP 8.1+
-- Composer
-- MySQL
-
-## Installation
+## Средство
 ```bash
-git clone [votre-repo]
+git clone [url]
 cd todo-api
 composer install
 cp .env.example .env
-# Configurez votre base de données dans .env
+# Настройте свою базу данных в .env
 php artisan key:generate
 php artisan migrate
 php artisan serve
@@ -26,39 +23,39 @@ php artisan serve
 
 ```
 
-## 📝 Description
+## 📝 Описание
 
-Ce contrôleur Laravel fournit une API complète pour la gestion des tâches avec :
+Этот контроллер Laravel предоставляет полный API для управления задачами. :
 
 | ✅ | 🛡️ | 📊 | 🔒 | 📝 | 🎯 |
 |---|---|---|---|---|---|
-| Opérations CRUD | Gestion d'erreurs | Réponses JSON | Validation |Type safety |
+| Операции CRUD | Обработка ошибок | Ответы JSON | Валидация |Тип безопасности |
 
-## 🚀 Endpoints
+## 🚀 Конечные точки
 
-| Méthode | URL | Description | Code HTTP |
+| Метод | URL | Описание | Code HTTP |
 |---------|-----|-------------|-----------|
-| `GET` | `/api/tasks` | Récupérer toutes les tâches | `200` |
-| `POST` | `/api/tasks` | Créer une nouvelle tâche | `201` |
-| `GET` | `/api/tasks/{id}` | Récupérer une tâche spécifique | `200` |
-| `PUT` | `/api/tasks/{id}` | Mettre à jour une tâche | `200` |
-| `DELETE` | `/api/tasks/{id}` | Supprimer une tâche | `200` |
+| `GET` | `/api/tasks` | Получить все задачи | `200` |
+| `POST` | `/api/tasks` | Создать новую задачу | `201` |
+| `GET` | `/api/tasks/{id}` | Получить конкретную задачу | `200` |
+| `PUT` | `/api/tasks/{id}` | Обновить задачу | `200` |
+| `DELETE` | `/api/tasks/{id}` | Удалить задачу | `200` |
 
-## 📦 Structure des réponses
-## Test avec Postman
+## 📦 Структура ответа
+## Тестирование с помощью Postman
 ### ✅ 201 OK, store() → POST /api/tasks
 ```json
 {
     "success": true,
     "data": {
-        "title": "Ma tâche3",
-        "description": "Description",
-        "status": "en_attente",
+        "title": "Моя задача3",
+        "description": "Описание",
+        "status": "на_удерживании",
         "updated_at": "2026-03-07T18:27:53.000000Z",
         "created_at": "2026-03-07T18:27:53.000000Z",
         "id": 3
     },
-    "message": "Tâche créée avec succès"
+    "message": "Задача успешно создана"
 }
 ```
 
@@ -70,30 +67,30 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
     "data": [
         {
             "id": 1,
-            "title": "Tâche modifiée",
-            "description": "Description",
-            "status": "En cours",
+            "title": "Измененная задача",
+            "description": "Описание",
+            "status": "В ходе выполнения",
             "created_at": "2026-03-06T18:10:37.000000Z",
             "updated_at": "2026-03-06T19:07:16.000000Z"
         },
         {
             "id": 2,
-            "title": "Ma tâche2",
-            "description": "Description",
-            "status": "à faire",
+            "title": "Моя задача2",
+            "description": "Описание",
+            "status": "делать",
             "created_at": "2026-03-06T21:10:13.000000Z",
             "updated_at": "2026-03-06T21:10:13.000000Z"
         },
         {
             "id": 3,
-            "title": "Ma tâche3",
-            "description": "Description",
+            "title": "Моя задача3",
+            "description": "Описание",
             "status": "en_attente",
             "created_at": "2026-03-07T18:27:53.000000Z",
             "updated_at": "2026-03-07T18:27:53.000000Z"
         }
     ],
-    "message": "Tâches récupérées avec succès"
+    "message": "Задачи успешно восстановлены"
 }
 
 ```
@@ -104,8 +101,8 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
     "success": true,
     "data": {
         "id": 1,
-        "title": "Tâche modifiée",
-        "description": "Description",
+        "title": "Измененная задача",
+        "description": "Описание",
         "status": "En cours",
         "created_at": "2026-03-06T18:10:37.000000Z",
         "updated_at": "2026-03-06T19:07:16.000000Z"
@@ -121,13 +118,13 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
     "success": true,
     "data": {
         "id": 1,
-        "title": "Tâche modifiée",
-        "description": "Description",
+        "title": "Измененная задача",
+        "description": "Описание",
         "status": "En cours",
         "created_at": "2026-03-06T18:10:37.000000Z",
         "updated_at": "2026-03-06T19:07:16.000000Z"
     },
-    "message": "Tâche mise à jour avec succès"
+    "message": "Задача успешно обновлена"
 }
 ```
 
@@ -135,5 +132,5 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
 ```json
 {
     "success": true,
-    "message": "Tâche supprimée avec succès"
+    "message": "Задача успешно удалена"
 }
