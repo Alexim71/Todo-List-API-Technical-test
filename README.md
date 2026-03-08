@@ -26,7 +26,7 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
 
 ## 📦 Structure des réponses
 
-### ✅ 201 index() → GET /api/tasks
+### ✅ 201 index() → POST /api/tasks
 ```json
 {
     "success": true,
@@ -40,9 +40,11 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
     },
     "message": "Tâche créée avec succès"
 }
+```
 
-### ✅ 201 index() → GET /api/tasks
+### ✅ 200 index() → GET /api/tasks
 ```json
+
 {
     "success": true,
     "data": [
@@ -73,3 +75,7 @@ Ce contrôleur Laravel fournit une API complète pour la gestion des tâches ave
     ],
     "message": "Tâches récupérées avec succès"
 }
+
+```
+
+
