@@ -3,7 +3,7 @@
 Un contrôleur RESTful optimisé pour la gestion des tâches avec une gestion avancée des erreurs et des réponses JSON structurées.
 
 ![Laravel](https://img.shields.io/badge/Laravel-12.53.0%2B-FF2D20?style=for-the-badge&logo=laravel)
-![PHP](https://img.shields.io/badge/PHP-8.5.3%?style=for-the-badge&logo=php)
+![PHP](https://img.shields.io/badge/PHP-8.5.3%2B-FF2D20?style=for-the-badge&logo=php)
 ![API](https://img.shields.io/badge/API-RESTful-00C7B7?style=for-the-badge&logo=api)
 
 ## 📝 Description
