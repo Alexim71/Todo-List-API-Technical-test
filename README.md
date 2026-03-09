@@ -16,7 +16,7 @@ git clone [url]
 cd todo-api
 composer install
 cp .env.example .env
-# Настройте свою базу данных в .env
+Настройте свою базу данных в .env
 php artisan key:generate
 php artisan migrate
 php artisan serve
