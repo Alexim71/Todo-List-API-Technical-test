@@ -118,14 +118,20 @@ php artisan serve
 {
     "success": true,
     "data": {
-        "id": 1,
-        "title": "Измененная задача",
+        "id": 3,
+        "title": "Tâche modifiée4",
         "description": "Описание",
-        "status": "En cours",
-        "created_at": "2026-03-06T18:10:37.000000Z",
-        "updated_at": "2026-03-06T19:07:16.000000Z"
+        "status": "в_ходе_выполнения",
+        "created_at": "2026-03-07T18:27:53.000000Z",
+        "updated_at": "2026-03-09T07:57:15.000000Z"
     },
-    "message": "Задача успешно обновлена"
+    "message": "Задача успешно обновлена",
+    "changes": {
+        "title": {
+            "old": "Tâche modifiée",
+            "new": "Tâche modifiée4"
+        }
+    }
 }
 ```
 
