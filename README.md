@@ -76,7 +76,7 @@ php artisan serve
             "id": 1,
             "title": "Измененная задача",
             "description": "Описание",
-            "status": "В ходе выполнения",
+            "status": "В_ходе_выполнения",
             "created_at": "2026-03-06T18:10:37.000000Z",
             "updated_at": "2026-03-06T19:07:16.000000Z"
         },
@@ -92,7 +92,7 @@ php artisan serve
             "id": 3,
             "title": "Моя задача3",
             "description": "Описание",
-            "status": "en_attente",
+            "status": "на_удерживании",
             "created_at": "2026-03-07T18:27:53.000000Z",
             "updated_at": "2026-03-07T18:27:53.000000Z"
         }
@@ -110,7 +110,7 @@ php artisan serve
         "id": 1,
         "title": "Измененная задача",
         "description": "Описание",
-        "status": "En cours",
+        "status": "В_ходе_выполнения",
         "created_at": "2026-03-06T18:10:37.000000Z",
         "updated_at": "2026-03-06T19:07:16.000000Z"
     }
